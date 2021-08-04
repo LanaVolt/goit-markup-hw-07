@@ -1,0 +1,136 @@
+.footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--primary-background-color);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address {
+  margin-top: 20px;
+
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-location {
+  margin-bottom: 9px;
+  color: var(--primary-white);
+}
+
+.footer-link {
+  color: var(--secondary-white);
+  transition: color 250ms var(--timing-function);
+
+  .footer-link:hover,
+  .footer-link:focus {
+    color: var(--primary-white);
+  }
+}
+
+.footer-contact:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.join {
+  margin-left: 70px;
+}
+
+.join-text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white);
+}
+
+.join-links {
+  display: flex;
+  align-items: center;
+}
+
+.join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-accent-color);
+  }
+}
+
+.join-logo:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-icon {
+  fill: var(--primary-white);
+}
+
+.footer-form-container {
+  margin-left: 92px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-form-field {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  color: var(--primary-white);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: var(--modal-btn-shadow);
+  border-radius: 4px;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-white);
+  background-color: var(--primary-accent-color);
+  border-color: transparent;
+  border-radius: 4px;
+  box-shadow: var(--modal-btn-shadow);
+  cursor: pointer;
+}
+
+.footer-btn-icon {
+  margin-left: 10px;
+}
