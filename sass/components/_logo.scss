@@ -6,11 +6,11 @@
   letter-spacing: 0.03em;
   color: var(--primary-accent-color);
 
-  &__black-accent {
+  &__accent-black {
     color: var(--logo-accent-color);
   }
 
-  &__white-accent {
+  &__accent-white {
     color: var(--primary-white);
   }
 }

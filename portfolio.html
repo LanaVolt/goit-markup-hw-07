@@ -241,54 +241,68 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-container container">
+      <div class="footer__container container">
         <div>
-          <a class="logo" href="./index.html">Web<span class="logo__white-accent">Studio</span></a>
-          <address class="footer-address">
-            <p class="footer-location">г. Киев, пр-т Леси Украинки, 26</p>
+          <a class="logo" href="./index.html">Web<span class="logo__accent-white">Studio</span></a>
+          <address class="address footer__address">
             <ul>
-              <li class="footer-contact">
-                <a class="footer-link" href="mailto:info@example.com">info@example.com</a>
+              <li class="address__contact">
+                <p class="address__location">г. Киев, пр-т Леси Украинки, 26</p>
               </li>
-              <li class="footer-contact">
-                <a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="address__contact">
+                <a class="address__link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="address__contact">
+                <a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-
-        <div class="join">
-          <p class="join-text">Присоединяйтесь</p>
-          <ul class="join-links">
-            <li class="join-logo">
-              <a class="join-link" href="">
-                <svg class="join-icon" width="20" height="20">
+        <div class="footer__join">
+          <p class="footer__join-text">Присоединяйтесь</p>
+          <ul class="social">
+            <li class="social__logo">
+              <a class="social__link social__link-background" href="">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-logo">
-              <a class="join-link" href="">
-                <svg class="join-icon" width="20" height="20">
+            <li class="social__logo">
+              <a class="social__link social__link-background" href="">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-logo">
-              <a class="join-link" href="">
-                <svg class="join-icon" width="20" height="20">
+            <li class="social__logo">
+              <a class="social__link social__link-background" href="">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-logo">
-              <a class="join-link" href="">
-                <svg class="join-icon" width="20" height="20">
+            <li class="social__logo">
+              <a class="social__link social__link-background" href="">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
+        </div>
+    
+        <div class="footer__subscribe">
+          <p class="footer__join-text">Подпишитесь на рассылку</p>
+          <form class="subscribe" action="#">
+            <input class="subscribe__field" type="email" name="mail" placeholder="E-mail" required />
+            <button class="subscribe__btn" type="submit">
+              Подписаться
+              <svg class="btn__icon-end" width="24" height="24">
+                <use href="./images/sprite.svg#send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
