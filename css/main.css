@@ -100,11 +100,11 @@ ul {
   color: var(--primary-accent-color);
 }
 
-.logo__header-accent {
+.logo__black-accent {
   color: var(--logo-accent-color);
 }
 
-.footer-logo-accent {
+.logo__white-accent {
   color: var(--primary-white);
 }
 
@@ -446,7 +446,7 @@ ul {
   background-image: linear-gradient(var(--primary-overlay-color), var(--primary-overlay-color)), url(../images/hero/hero-img.jpg);
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -457,7 +457,7 @@ ul {
   color: var(--primary-white);
 }
 
-.hero-button {
+.hero__button {
   display: block;
   padding: 10px 32px;
   border: none;
