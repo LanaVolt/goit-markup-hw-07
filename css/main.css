@@ -100,11 +100,11 @@ ul {
   color: var(--primary-accent-color);
 }
 
-.logo__accent-black {
+.logo__accent_black {
   color: var(--logo-accent-color);
 }
 
-.logo__accent-white {
+.logo__accent_white {
   color: var(--primary-white);
 }
 
@@ -133,22 +133,22 @@ ul {
   border-radius: 50%;
 }
 
-.social__link-fill {
+.social__link_theme_light {
   fill: var(--primary-icon-color);
   transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
-.social__link-fill:hover, .social__link-fill:focus {
+.social__link_theme_light:hover, .social__link_theme_light:focus {
   fill: var(--primary-white);
   background-color: var(--primary-accent-color);
 }
 
-.social__link-background {
+.social__link_theme_dark {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms var(--timing-function);
 }
 
-.social__link-background:hover, .social__link-background:focus {
+.social__link_theme_dark:hover, .social__link_theme_dark:focus {
   background-color: var(--primary-accent-color);
 }
 
