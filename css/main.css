@@ -629,14 +629,17 @@ ul {
 .btn-list {
   display: flex;
   justify-content: center;
+}
+
+.portfolio__btn-list {
   margin-bottom: 50px;
 }
 
-.btn-item:not(:last-child) {
+.btn-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-button {
+.btn-list__button {
   padding: 6px 22px;
   border-radius: 4px;
   border-color: transparent;
@@ -651,40 +654,43 @@ ul {
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
-.portfolio-button:hover, .portfolio-button:focus, .portfolio-button.current {
+.btn-list__button:hover, .btn-list__button:focus, .btn-list__button.current {
   color: var(--primary-white);
   background-color: var(--primary-accent-color);
   box-shadow: var(--btn-shadow);
 }
 
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
+.portfolio__card-set {
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.example-link {
-  display: block;
-  transition: box-shadow 250ms var(--timing-function);
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.example-link:hover, .example-link:focus {
-  box-shadow: var(--hover-card-shadow);
-}
-
-.example {
+.card-set__item {
   margin-top: 30px;
   margin-left: 30px;
 }
 
-.card-img-box {
+.card {
+  display: block;
+  transition: box-shadow 250ms var(--timing-function);
+}
+
+.card:hover, .card:focus {
+  box-shadow: var(--hover-card-shadow);
+}
+
+.card__img-box {
   position: relative;
   overflow: hidden;
 }
 
 /* div.card-img-box>p.text-overlay */
-.text-overlay {
+.card__text {
   display: block;
   position: absolute;
   bottom: 0;
@@ -701,18 +707,18 @@ ul {
   transition: transform 250ms var(--timing-function);
 }
 
-.example-link:hover .text-overlay,
-.example-link:focus .text-overlay {
+.card:hover .card__text,
+.card:focus .card__text {
   transform: translateY(0);
 }
 
-.example-box {
+.card__wrapper {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
 
-.project-name {
+.card__title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -721,7 +727,7 @@ ul {
   color: var(--primary-dark-color);
 }
 
-.project-type {
+.card__subtitle {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

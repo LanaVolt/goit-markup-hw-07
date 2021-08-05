@@ -20,17 +20,18 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- Шапка -->
-    <header class="page-header">
+
+    <!-- Header -->
+    <header class="header">
       <div class="container header-container">
         <nav class="navigation">
-          <a class="logo" href="./index.html">Web<span class="header-logo-accent">Studio</span></a>
+          <a class="logo" href="./index.html">Web<span class="logo__header-accent">Studio</span></a>
           <ul class="menu">
             <li class="menu__item">
-              <a class="menu__link" href="./index.html">Студия</a>
+              <a class="menu__link current" href="./index.html">Студия</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link current" href="./portfolio.html">Портфолио</a>
+              <a class="menu__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="">Контакты</a>
@@ -40,7 +41,7 @@
         <ul class="contact">
           <li class="contact__item">
             <a class="contact__link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon">
+              <svg class="contact__icon" width="16" height="12">
                 <use href="./images/sprite.svg#envelope"></use>
               </svg>
               info@devstudio.com
@@ -48,7 +49,7 @@
           </li>
           <li class="contact__item">
             <a class="contact__link" href="tel:+380961111111">
-              <svg class="smartphone">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./images/sprite.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -58,180 +59,182 @@
       </div>
     </header>
 
+    <!-- Main content -->
     <main>
       <section class="portfolio section">
         <div class="container">
           <h2 class="visually-hidden">Примеры работ</h2>
-          <ul class="btn-list">
-            <li class="btn-item">
-              <button class="portfolio-button current" type="button">Все</button>
+          <ul class="btn-list portfolio__btn-list">
+            <li class="btn-list__item">
+              <button class="btn-list__button current" type="button">Все</button>
             </li>
-            <li class="btn-item">
-              <button class="portfolio-button" type="button">Веб-сайты</button>
+            <li class="btn-list__item">
+              <button class="btn-list__button" type="button">Веб-сайты</button>
             </li>
-            <li class="btn-item">
-              <button class="portfolio-button" type="button">Приложения</button>
+            <li class="btn-list__item">
+              <button class="btn-list__button" type="button">Приложения</button>
             </li>
-            <li class="btn-item"><button class="portfolio-button" type="button">Дизайн</button></li>
-            <li class="btn-item">
-              <button class="portfolio-button" type="button">Маркетинг</button>
+            <li class="btn-list__item"><button class="btn-list__button" type="button">Дизайн</button></li>
+            <li class="btn-list__item">
+              <button class="btn-list__button" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="card-list">
-            <li class="example">
-              <a class="example-link" href="">
-                <div class="card-img-box">
+
+          <ul class="card-set portfolio__card-set">
+            <li class="card-set__item">
+              <a class="card" href="">
+                <div class="card__img-box">
                   <img
                     src="./images/portfolio/img-1.jpg"
                     alt="Веб-сайт открыт на ноутбуке"
                     width="370"
                     height="294"
                   />
-                  <p class="text-overlay">
+                  <p class="card__text">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                     конкурентов.
                   </p>
                 </div>
-                <div class="example-box">
-                  <h3 class="project-name">Технокряк</h3>
-                  <p class="project-type">Веб-сайт</p>
+                <div class="card__wrapper">
+                  <h3 class="card__title">Технокряк</h3>
+                  <p class="card__subtitle">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="example">
-              <a class="example-link" href="">
-                <div class="card-img-box">
+            <li class="card-set__item">
+              <a class="card" href="">
+                <div class="card__img-box">
                   <img
                     src="./images/portfolio/img-2.jpg"
                     alt="Баскеиболисты в движении"
                     width="370"
                     height="294"
                   />
-                  <p class="text-overlay"></p>
+                  <p class="card__text"></p>
                 </div>
-                <div class="example-box">
-                  <h3 class="project-name">Технокряк</h3>
-                  <p class="project-type">Веб-сайт</p>
+                <div class="card__wrapper">
+                  <h3 class="card__title">Технокряк</h3>
+                  <p class="card__subtitle">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="example">
-              <a class="example-link" href="">
-                <div class="card-img-box">
+            <li class="card-set__item">
+              <a class="card" href="">
+                <div class="card__img-box">
                   <img
                     src="./images/portfolio/img-3.jpg"
                     alt="Логотип ресторана"
                     width="370"
                     height="294"
                   />
-                  <p class="text-overlay"></p>
+                  <p class="card__text"></p>
                 </div>
-                <div class="example-box">
-                  <h3 class="project-name">Ресторан Seafood</h3>
-                  <p class="project-type">Приложение</p>
+                <div class="card__wrapper">
+                  <h3 class="card__title">Ресторан Seafood</h3>
+                  <p class="card__subtitle">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="example">
-              <a class="example-link" href="">
-                <div class="card-img-box">
+            <li class="card-set__item">
+              <a class="card" href="">
+                <div class="card__img-box">
                   <img
                     src="./images/portfolio/img-4.jpg"
                     alt="Полноразмерные наушники"
                     width="370"
                     height="294"
                   />
-                  <p class="text-overlay"></p>
+                  <p class="card__text"></p>
                 </div>
-                <div class="example-box">
-                  <h3 class="project-name">Проект Prime</h3>
-                  <p class="project-type">Маркетинг</p>
+                <div class="card__wrapper">
+                  <h3 class="card__title">Проект Prime</h3>
+                  <p class="card__subtitle">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="example">
-              <a class="example-link" href="">
-                <div class="card-img-box">
+            <li class="card-set__item">
+              <a class="card" href="">
+                <div class="card__img-box">
                   <img
                     src="./images/portfolio/img-5.jpg"
                     alt="Белая и коричневая коробки"
                     width="370"
                     height="294"
                   />
-                  <p class="text-overlay"></p>
+                  <p class="card__text"></p>
                 </div>
-                <div class="example-box">
-                  <h3 class="project-name">Проект Boxes</h3>
-                  <p class="project-type">Приложение</p>
+                <div class="card__wrapper">
+                  <h3 class="card__title">Проект Boxes</h3>
+                  <p class="card__subtitle">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="example">
-              <a class="example-link" href="">
-                <div class="card-img-box">
+            <li class="card-set__item">
+              <a class="card" href="">
+                <div class="card__img-box">
                   <img
                     src="./images/portfolio/img-6.jpg"
                     alt="Веб-сайт открыт на мониторе"
                     width="370"
                     height="294"
                   />
-                  <p class="text-overlay"></p>
+                  <p class="card__text"></p>
                 </div>
-                <div class="example-box">
-                  <h3 class="project-name">Inspiration has no Borders</h3>
-                  <p class="project-type">Веб-сайт</p>
+                <div class="card__wrapper">
+                  <h3 class="card__title">Inspiration has no Borders</h3>
+                  <p class="card__subtitle">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="example">
-              <a class="example-link" href="">
-                <div class="card-img-box">
+            <li class="card-set__item">
+              <a class="card" href="">
+                <div class="card__img-box">
                   <img
                     src="./images/portfolio/img-7.jpg"
                     alt="Разворот журнала"
                     width="370"
                     height="294"
                   />
-                  <p class="text-overlay"></p>
+                  <p class="card__text"></p>
                 </div>
-                <div class="example-box">
-                  <h3 class="project-name">Издание Limited Edition</h3>
-                  <p class="project-type">Дизайн</p>
+                <div class="card__wrapper">
+                  <h3 class="card__title">Издание Limited Edition</h3>
+                  <p class="card__subtitle">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="example">
-              <a class="example-link" href="">
-                <div class="card-img-box">
+            <li class="card-set__item">
+              <a class="card" href="">
+                <div class="card__img-box">
                   <img
                     src="./images/portfolio/img-8.jpg"
                     alt="Бирка с названием проекта"
                     width="370"
                     height="294"
                   />
-                  <p class="text-overlay"></p>
+                  <p class="card__text"></p>
                 </div>
-                <div class="example-box">
-                  <h3 class="project-name">Проект LAB</h3>
-                  <p class="project-type">Маркетинг</p>
+                <div class="card__wrapper">
+                  <h3 class="card__title">Проект LAB</h3>
+                  <p class="card__subtitle">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="example">
-              <a class="example-link" href="">
-                <div class="card-img-box">
+            <li class="card-set__item">
+              <a class="card" href="">
+                <div class="card__img-box">
                   <img
                     src="./images/portfolio/img-9.jpg"
                     alt="Человек печатает на ноутбуке"
                     width="370"
                     height="294"
                   />
-                  <p class="text-overlay"></p>
+                  <p class="card__text"></p>
                 </div>
-                <div class="example-box">
-                  <h3 class="project-name">Growing Business</h3>
-                  <p class="project-type">Приложение</p>
+                <div class="card__wrapper">
+                  <h3 class="card__title">Growing Business</h3>
+                  <p class="card__subtitle">Приложение</p>
                 </div>
               </a>
             </li>
@@ -240,7 +243,7 @@
       </section>
     </main>
 
-    <!-- Підвал -->
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-container container">
         <div>
