@@ -35,8 +35,10 @@
   }
 }
 
-.footer-contact:not(:last-child) {
-  margin-bottom: 9px;
+.footer-contact {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .join {
@@ -74,8 +76,10 @@
   }
 }
 
-.join-logo:not(:last-child) {
-  margin-right: 10px;
+.join-logo {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .join-icon {

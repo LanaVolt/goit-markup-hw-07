@@ -100,7 +100,7 @@ ul {
   color: var(--primary-accent-color);
 }
 
-.header-logo-accent {
+.logo__header-accent {
   color: var(--logo-accent-color);
 }
 
@@ -339,7 +339,7 @@ ul {
   cursor: pointer;
 }
 
-.page-header {
+.header {
   max-width: 1600px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -368,28 +368,28 @@ ul {
   margin-left: 92px;
 }
 
-.menu-item {
+.menu__item {
   position: relative;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-link {
+.menu__link {
   color: var(--primary-dark-color);
   transition: color 250ms var(--timing-function);
 }
 
-.nav-link:hover, .nav-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--primary-accent-color);
 }
 
-.nav-link.current {
+.menu__link.current {
   color: var(--primary-accent-color);
 }
 
-.nav-link.current::after {
+.menu__link.current::after {
   content: '';
   display: block;
   justify-content: center;
@@ -401,49 +401,34 @@ ul {
   background-color: var(--primary-accent-color);
 }
 
-.contact-list {
+.contact {
   display: flex;
   align-items: center;
 }
 
-.contact-item:not(:last-child) {
+.contact__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-link {
+.contact__link {
   display: flex;
   align-items: center;
   color: var(--text-color);
   transition: color 250ms var(--timing-function);
 }
 
-.contact-link:hover, .contact-link:focus {
+.contact__link:hover, .contact__link:focus {
   color: var(--primary-accent-color);
 }
 
-.envelope {
-  width: 16px;
-  height: 12px;
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
   transition: fill 250ms var(--timing-function);
 }
 
-.contact-link:hover .envelope,
-.contact-link:focus .envelope {
-  fill: var(--primary-accent-color);
-}
-
-.smartphone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-  transition: fill 250ms var(--timing-function);
-}
-
-.contact-link:hover .smartphone,
-.contact-link:focus .smartphone {
+.contact__link:hover .contact__icon,
+.contact__link:focus .contact__icon {
   fill: var(--primary-accent-color);
 }
 

@@ -21,6 +21,8 @@
   }
 }
 
-.social-logo:not(:last-child) {
-  margin-right: 10px;
+.social-logo {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
